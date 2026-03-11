@@ -1,16 +1,20 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Employees from "./pages/Employees";
 import EmployeeDetails from "./pages/EmployeeDetails";
+import Dashboard from "./pages/Dashboard";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div>
+    <>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Employees />} />
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/employees" element={<Employees />} />
         <Route path="/employees/:id" element={<EmployeeDetails />} />
       </Routes>
-    </div>
+    </>
   );
 };
 
