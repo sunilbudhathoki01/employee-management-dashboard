@@ -20,17 +20,17 @@ const EmployeeDetails = () => {
   };
 
   if (!employee) {
-    return <div className="p-6">Loading employee...</div>;
+    return <div className="p-4 sm:p-6">Loading employee...</div>;
   }
 
   return (
-    <div className="p-8 bg-gray-50 min-h-screen flex justify-center">
+    <div className="p-4 sm:p-8 bg-gray-50 min-h-screen flex justify-center">
       <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-md">
-        <div className="flex items-center gap-4 mb-4">
+        <div className="flex items-center gap-3 sm:gap-4 mb-4">
           <img
             src={employee.image}
             alt={employee.firstName}
-            className="w-16 h-16 rounded-full"
+            className="w-14 h-14 sm:w-16 sm:h-16 rounded-full"
           />
 
           <div>
