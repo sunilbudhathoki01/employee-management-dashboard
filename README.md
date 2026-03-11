@@ -1,16 +1,63 @@
-# React + Vite
+# Employee Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Employee Management Dashboard built using React and Tailwind CSS.  
+The application fetches employee data from a public API and displays it in a clean dashboard with search, filtering, and employee detail views.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://employee-management-dashboard-six.vercel.app/
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Dashboard with employee statistics
+- Employee list fetched from API
+- Search employees by name
+- Filer employees by department
+- View detailed employee profile
+- Responsive UI for desktop and mobile
+- Clean and simple UI with iconss
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Tailwind CSS
+- Axios
+- React Router
+- Lucide React Icons
+
+## API Used
+
+https://dummyjson.com/users
+
+## Pages
+
+## Dashboard
+
+Displays employee statistics such as:
+
+- Total Employees
+- Male Employees
+- Female Employees
+
+### Employees
+
+- Shows employee list
+- Search employees
+- Filter by department
+- View employee details
+
+### Employee Details
+
+Shows detailed information about a selected employee such as:
+
+- Name
+- Email
+- Phone
+- Age
+- Gender
+- Blood Group
+- Height / Weight
+
+## Installation
+
+Clone the repository:git clone https://github.com/sunilbudhathoki01/employee-management-dashboard.git

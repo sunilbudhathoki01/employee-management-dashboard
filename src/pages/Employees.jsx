@@ -42,7 +42,6 @@ const Employees = () => {
         Employees
       </h1>
 
-      {/* Filters */}
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
         <input
           type="text"
@@ -64,8 +63,6 @@ const Employees = () => {
           ))}
         </select>
       </div>
-
-      {/* Table */}
       <div className="overflow-x-auto bg-white shadow-sm rounded-lg border">
         <table className="min-w-full text-sm">
           <thead className="bg-gray-100 text-gray-600 text-left">
@@ -81,7 +78,6 @@ const Employees = () => {
           <tbody>
             {filteredEmployees.map((emp) => (
               <tr key={emp.id} className="border-t hover:bg-gray-50 transition">
-                {/* Employee */}
                 <td className="px-4 py-3 flex items-center gap-3">
                   <img
                     src={emp.image}
@@ -99,22 +95,18 @@ const Employees = () => {
                   </div>
                 </td>
 
-                {/* Department */}
                 <td className="px-4 py-3 text-gray-600">
                   {emp.company.department}
                 </td>
 
-                {/* Email */}
                 <td className="px-4 py-3 text-gray-600 hidden sm:table-cell">
                   {emp.email}
                 </td>
 
-                {/* Gender */}
                 <td className="px-4 py-3 capitalize text-gray-600">
                   {emp.gender}
                 </td>
 
-                {/* Action */}
                 <td className="px-4 py-3">
                   <Link
                     to={`/employees/${emp.id}`}

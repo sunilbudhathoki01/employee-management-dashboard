@@ -47,7 +47,6 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
-      {/* Header */}
       <div className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-8 rounded-xl shadow-lg mb-8">
         <h1 className="text-3xl font-bold">Employee Dashboard</h1>
         <p className="opacity-90 mt-1">
@@ -55,7 +54,6 @@ const Dashboard = () => {
         </p>
       </div>
 
-      {/* Stat Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {cards.map((card, index) => (
           <div
@@ -76,7 +74,6 @@ const Dashboard = () => {
         ))}
       </div>
 
-      {/* Optional Section */}
       <div className="mt-10 bg-white p-6 rounded-xl shadow-md">
         <h2 className="text-xl font-semibold mb-4">Dashboard Summary</h2>
         <p className="text-gray-600">
