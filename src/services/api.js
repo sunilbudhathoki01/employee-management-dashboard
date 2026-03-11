@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://dummyjson.com",
+  baseURL: " https://dummyjson.com",
 });
 
 export const getEmployees = () => API.get("/users");
