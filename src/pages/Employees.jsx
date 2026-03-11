@@ -69,8 +69,8 @@ const Employees = () => {
             <tr>
               <th className="px-4 py-3">Employee</th>
               <th className="px-4 py-3">Department</th>
-              <th className="px-4 py-3">Email</th>
-              <th className="px-4 py-3">Gender</th>
+              <th className="px-4 py-3 hidden sm:table-cell">Email</th>
+              <th className="px-4 py-3 hidden sm:table-cell">Gender</th>
               <th className="px-4 py-3">Action</th>
             </tr>
           </thead>
@@ -103,7 +103,7 @@ const Employees = () => {
                   {emp.email}
                 </td>
 
-                <td className="px-4 py-3 capitalize text-gray-600">
+                <td className="px-4 py-3 capitalize text-gray-600 hidden sm:table-cell">
                   {emp.gender}
                 </td>
 
